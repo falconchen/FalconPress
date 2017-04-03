@@ -1,0 +1,50 @@
+
+.chapter-info {
+  box-shadow: 0 0px 8px rgb(88, 84, 57);
+  padding: 50px;
+  @media (max-width: @screen-xs-max) {
+    padding:30px;
+  }
+}
+
+.chapter-title{
+  width:75%;
+  text-align: center;
+  font-family: Comic Sans MS;
+  border-bottom:1px solid lighten(@gray-lighter,15%);
+  padding-bottom:30px;
+  margin-bottom: 30px;
+  @media (max-width: @screen-xs-max) {
+    padding-bottom:15px;
+    margin-bottom: 15px;
+    font-size:@font-size-h4;
+  }
+}
+
+.chapter-content {
+  font-size: @font-size-large;
+  font-family: Comic Sans MS;
+  padding-bottom:50px;
+  line-height: 2em;
+  @media (max-width: @screen-xs-max) {
+    padding-bottom:20px;
+    font-size: @font-size-base;
+  }
+}
+
+.book-index {
+  width:240px;
+  @media (max-width: @screen-xs-max) {
+    top:-10px;
+  }
+}
+
+.book-nav a {
+  text-decoration: none;
+  color:@gray-dark;
+
+}
+
+.chapter-content p {
+  text-indent: 2em;
+}

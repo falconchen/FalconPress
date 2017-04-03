@@ -1,0 +1,9 @@
+//等高
+.row {
+    overflow: hidden;
+}
+
+[class*="col-"] {
+    margin-bottom: -99999px; /* 讓overflow發生 */
+    padding-bottom: 99999px; /* 讓padding-bottom超長，藉此拉長背景 */
+}

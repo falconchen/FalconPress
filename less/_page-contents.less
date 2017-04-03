@@ -1,0 +1,260 @@
+//
+// Page Contents
+// --------------------------
+a,p {word-break: break-all;}
+.page-contents {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  blockquote{
+    background: whitesmoke;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .front-row-thumbs {
+    float:left;
+    margin-right: 16px;
+    @media (max-width: @screen-xs-max) {
+      width: 80px;
+    }
+  }
+  .front-row-excerpt{
+    @media (max-width: @screen-xs-max) {
+      display: none;
+    }
+  }
+
+
+  @media (max-width: @screen-xs-max) {
+    // fits within col-sm-min in markup
+    [class^="col"] {
+      clear: both;
+      padding-bottom: 5px;
+
+    }
+    .container {
+      padding: 0;
+    }
+
+    .row-eq-height {
+      padding: 0;
+      padding-left: 5px;
+      min-height: 90px;
+    }
+    //padding:0 0 40px 0;
+  }
+
+  .no_thumb{
+    min-height: 100px;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    [class^="col"] {
+      padding-bottom: 20px;
+    }
+    .post-row {
+      .col-sm-3 {
+        height:200px;
+        position: relative;
+        p {
+          overflow: hidden;
+        }
+
+        article {
+          display: block;
+          text-align: center;
+          width: 100%;
+          position: absolute;
+          bottom: 15px;
+        }
+
+
+      }
+    }
+
+  }
+
+  @media (max-width: @screen-xs-max) {
+    .fp-board {
+      display: none;
+      padding-bottom: 0px;
+    }
+
+  }
+
+
+}
+
+#floor1 {
+  @media (max-width: @screen-xs-max) {
+    padding: 0 0 4px 0;
+  }
+
+}
+
+#fp-board-details {
+  @media (max-width: @screen-xs-max) {
+    padding: 0 15px;
+  }
+
+  > h2 {
+    @media (max-width: @screen-xs-max) {
+      margin-top: 10px;
+    }
+    @media (min-width: @screen-sm-min) {
+      margin-top: 0;
+    }
+  }
+
+  .dl-horizontal {
+    @media (min-width: @screen-md-min) {
+      > dt {
+        width: 60px;
+      }
+
+      > dd {
+        margin-left: 80px;
+      }
+    }
+  }
+}
+
+#floor1 .fp-slider {
+  @media (max-width: @screen-xs-max) {
+    padding-bottom: 0;
+  }
+}
+
+.read-more {
+  text-align: center;
+}
+
+.pagination_wrap {
+  margin-top: -20px;
+  padding: 0;
+  text-align: center
+}
+
+
+.fp-video-meta {
+  text-align: center;
+}
+
+.post-list {
+
+  .list-group-item {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-image: url("../img/bg_text.gif");
+    background-position: right;
+    background-repeat: repeat-y;
+    background-color:#fff ;
+  }
+  a.list-group-item:hover{
+    background-color:#fff ;
+  }
+
+
+  .well-sm, .post-meta {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .post-title {
+    color: #000;
+  }
+}
+
+.read-more-frontpage {
+
+  margin-bottom: 50px;
+
+}
+
+.header-search {
+
+  .search-form {
+    @media (min-width: @screen-sm-min) {
+      .input-group-xs {
+        width: 200px;
+      }
+    }
+    @media (min-width: 1215px) {
+      .input-group-xs {
+        width: 250px;
+      }
+    }
+
+  }
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+
+}
+
+.admin-search-submit{
+  padding-top:6.5px;
+  padding-bottom: 6.5px;
+}
+
+.bg-note {
+  //background:  url("../img/bg_note.jpg") no-repeat scroll center 20% / 100% auto;
+  background:rgba(0, 0, 0, 0) url("../img/bg_note.jpg") no-repeat scroll center;
+  //background-attachment:fixed;
+  background-position: 20% 10%;
+  //background: #ccc;
+  height: 164px;
+  padding: 0;
+
+}
+.post-row h4 {
+	overflow:hidden;
+  line-height: 1.4em;
+  margin-top: 0;
+  font-size: 14px;
+}
+.post-row p{
+  color:#666;
+}
+
+.post-content {
+
+  h1:before{
+    font-size:0.8em;
+    content:"\f058";
+    font-family: FontAwesome;
+    margin-right:5px;
+  }
+
+  h1{
+    font-size: 1.1em;
+  }
+  h2{
+    font-size: 1.05em;
+  }
+  h3,h4,h5{
+    font-size: 1em;
+  }
+  p,li{
+
+    font-size: 0.9em;
+    line-height: 1.8;
+  }
+}
+div.loading-comment {
+  position: absolute;
+  color:#55cc44;
+}
+
+.input-group-btn:last-child > .btn,{
+  background:@gray-lightest;
+  border-color:@gray-lightest ;
+}
+.input-group input.search-field {
+  border-color:@gray-lightest ;
+  color:@gray-lightest ;
+}

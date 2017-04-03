@@ -1,0 +1,33 @@
+.music-item {
+  > div.music-cover {
+    float:left;
+  }
+
+  .music-detail{
+    float:left;
+    width:65%;
+    margin:10px 0 0 10px;
+  }
+  @media (max-width: @screen-xs-max) {
+    .music-detail{
+      width:auto;
+    }
+  }
+}
+
+.music-sidebar {
+  min-height:315px;
+  margin-bottom:20px;
+}
+
+@media (max-width: @screen-xs-max) {
+  .grid-music-container .m-now-controls .u-process {
+      max-width:100%;
+  }
+  .grid-music-container .m-music-list-wrap {
+    margin-top:10px;
+  }
+  .grid-music-container .m-play-controls a.mode{
+    margin-right:30px !important;
+  }
+}
