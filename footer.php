@@ -17,7 +17,7 @@
 
 
 
-            <h3 class="copyright" style="margin-top:0 "><small style="color:#999">Powered By <a href="">WordPress</a>  | Theme : <a href="#">FalconPress</a></small>
+            <h3 class="copyright" style="margin-top:0 "><small style="color:#999">Powered By <a href="https://wordpress.org">WordPress</a>  | Theme : <a href="https://github.com/falconchen/FalconPress">FalconPress</a></small>
 
             </h3>
 
