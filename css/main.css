@@ -7055,11 +7055,9 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 }
 .post-content strong {
   color: #fff;
-  border: 1px;
   padding: 0px 5px;
   font-weight: normal;
   background: #333;
-  border-radius: 5px;
 }
 .list-group .title {
   z-index: 2;
