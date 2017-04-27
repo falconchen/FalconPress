@@ -74,7 +74,7 @@ get_header(); ?>
                                 'title'=>empty($meta_arr['title'])? get_the_title():$meta_arr['title'],
                                 'singer'=>$meta_arr['artist'],
                                 'cover'=>get_music_cover_url(),
-                                'src'=>$meta_arr['type'] == 'type' ?  wp_get_attachment_url($meta_arr['file']) : $meta_arr['url']
+                                'src'=>$meta_arr['type'] == 'upload' ?  wp_get_attachment_url($meta_arr['file']) : $meta_arr['url']
                             );
                         ?>
                         <div class="col-sm-6">
