@@ -7,6 +7,7 @@
  * Time: 下午1:37
  * Project: cellmean.com
  */
+
 wp_enqueue_style('aplayer');
 wp_enqueue_script('aplayer');
 get_header('');
@@ -52,8 +53,8 @@ get_header('');
     $img_arr = wp_get_attachment_image_src($meta_arr['cover'],'music-cover');
     $img_src = $img_arr[0];
     $audio_info = wp_get_attachment_metadata($meta_arr['file']);
-    //$audio_url = wp_get_attachment_url($meta_arr['file']);
-    $audio_url = $meta_arr['type'] == 'type' ?  wp_get_attachment_url($meta_arr['file']) : $meta_arr['url']
+    $audio_url = ($meta_arr['type'] == 'upload') ? wp_get_attachment_url($meta_arr['file']) : $meta_arr['url'];
+
 ?>
 
 <script>

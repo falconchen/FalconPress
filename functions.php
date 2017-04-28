@@ -206,3 +206,24 @@ function get_post_thumbnail_url($post_id=null,$size='thumbnail'){
         return false;
     }
 }
+
+if(!function_exists('get_current_url')) {
+
+    function get_current_url() {
+        return  ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    }
+}
+
+// 前台强制使用http
+if(defined('FORCE_FRONT_HTTP') && FORCE_FRONT_HTTP) {
+
+    add_action('init',function(){
+
+       if(is_ssl() && !is_admin() && !get_current_url()!== str_replace('http://','https://',wp_login_url()))  {
+           $http_url =  'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+           wp_redirect($http_url,301);
+           exit;
+       }
+    });
+
+}
